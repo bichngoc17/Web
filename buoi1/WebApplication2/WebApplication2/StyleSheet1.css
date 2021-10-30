@@ -1,0 +1,69 @@
+﻿body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+banner {
+    background-color: chartreuse;
+    width: 100%;
+    height: 65px;
+}
+
+#menu {
+    height: 30px;
+    background-image: url(images/menu.gif);
+}
+
+#navigation a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 10px 10px;
+    width: 18%;
+    height: 30px;
+    background-image: url(images/menu.gif);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px
+}
+
+    #navigation a:hover, #navigation a:active {
+        color: blue;
+    }
+
+.main {
+    width: 100%;
+    flex
+}
+
+.left {
+    width: 20%;
+    background-color: aquamarine;
+    height: 200px;
+    float: left;
+    margin-left: 50px;
+}
+
+.right {
+    width: 25%;
+    background-color: aquamarine;
+    height: 200px;
+    float: right;
+    margin-right: 50px;
+}
+
+#footer {
+    clear: both;
+    background-color: burlywood;
+    color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    height: 60px;
+}

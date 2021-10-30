@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;}
+html,body{width:100%;height: 100%;}
+.top{
+    width: 100%;
+    height: 620px;
+    background-image: url(img/sl_bg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*đám mây*/
+img.layer1{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: 0%;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    animation: len 1s forwards; 
+}
+@keyframes len{
+    from{opacity: 0;transform: translateY(200px);}
+    to{opacity: 1;transform: translateY(0);}
+}
+/*cô gái*/
+img.layer2{
+    position: absolute;
+    z-index: 2;
+    right: 17%;
+    bottom: 0%;
+    width: 500px;
+    opacity: 0;
+    animation: cogai 1s forwards;
+    animation-delay: 0.8s;
+}
+@keyframes cogai
+{
+    0%{transform: translateY(5%);opacity:0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+/*trái tim */
+img.layer3{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 30%;
+    opacity: 0;
+    animation: zoom 1s forwards;
+    animation-delay: 1.5s;
+}
+@keyframes zoom
+{
+    0%{opacity: 0;transform: scaleZ(0.4);}
+    100%{opacity: 1;transform: scaleZ(1)}
+}
+/*chấm bi*/
+img.layer4{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 30%;
+    opacity: 0;
+    animation: zoom 1s forwards;
+    animation-delay: 2s;
+}
+/* cầu vồng*/
+img.layer5{
+    position: absolute;
+    z-index: 1;
+    right: 16%;
+    bottom: 2%;
+    width: 40%;
+    opacity: 0;
+    animation: zoom 1s forwards;
+    animation-delay: 3s;
+}
+.text1{
+    font-family: 'leckerli One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: antiquewhite;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    z-index: 5;
+    opacity: 0;
+    animation: sangohai 1s forwards;
+    animation-delay: 3.5s;
+}
+@keyframes sangphai
+{
+    0%{opacity: 0;;transform: scaleX(0.6) translateX(100px);}
+    100%{opacity: 1;transform: scaleX(1) translateX(0);}
+}
+.nut{
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    opacity: 0;
+    animation: nutlen 1s forwards;
+    animation-delay: 4s;
+}
+@keyframes nutlen
+{
+    0%{opacity: 0;;transform: translateY(100px);}
+    100%{opacity: 1;transform: translateY(0);}
+}
